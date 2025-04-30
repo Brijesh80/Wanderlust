@@ -31,7 +31,7 @@ app.set("viewengine", "ejs");
 
 
 
-app.use(express.urlencoded({ extends: true }));
+app.use(express.urlencoded({ extended: true }));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -106,7 +106,7 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/wanderlust");
+  await mongoose.connect("mongodb+srv://brijesh00784:1iggaoELzB6oqyRQ@cluster0.nlhu9jl.mongodb.net/wander");
 }
 
 app.all("*", (req, res, next) => {

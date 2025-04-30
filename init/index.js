@@ -3,17 +3,18 @@ const listing = require("../models/listing.js");
 const initData=require("./data.js");
 
 
-main().then(() => {
-    console.log("Successfully connected");
-
-})
-    .catch(err => console.log(err));
-
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/wanderlust');
-
-
-}
+    try {
+      await mongoose.connect('mongodb+srv://brijesh00784:1iggaoELzB6oqyRQ@cluster0.nlhu9jl.mongodb.net/wander', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      });
+      console.log("MongoDB connected");
+    } catch (err) {
+      console.error("MongoDB connection error:", err);
+    }
+  }
+  
 
 const initDB= async()=>{
 await listing.deleteMany({});

@@ -1,7 +1,7 @@
 const { query } = require("express");
 const listings = require("../models/listing");
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
-const mapToken = process.env.MAP_TOKEN;
+const mapToken ='pk.eyJ1IjoiYnJpamVzaHlhZGF2IiwiYSI6ImNtYTI0cmw5ZDE4Nnoya3F5ZGhxYjlobXoifQ.uqO8FIVj0SkNXpx6harAUw';
 const geocodingClient = mbxGeocoding({ accessToken: mapToken });
 
 
