@@ -72,6 +72,18 @@ Visit [http://localhost:3003](http://localhost:3003) in your browser to view the
 ![Screenshot 2025-04-30 195451](https://github.com/user-attachments/assets/787d5823-e9b3-4274-b0de-1753820dea76)
 ![Screenshot 2025-04-30 195520](https://github.com/user-attachments/assets/c5d69127-f8c1-41b6-b5bc-281b60dc6419)
 
+## 📄 License
+
+MIT License — feel free to use, fork, and contribute!
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
 
 
 
